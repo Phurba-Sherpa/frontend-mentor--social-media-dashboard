@@ -12,7 +12,6 @@
     --clr-bright-red: hsl(356, 69%, 56%);
     --clr-facebook: hsl(208, 92%, 53%);
     --clr-twitter: hsl(203, 89%, 53%);
-    --clr-instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
     --clr-youTube: hsl(348, 97%, 39%);
 
 
@@ -45,4 +44,93 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 1.5;
+    color: var(--clr-text-dark)
+}
+
+.container {
+    max-width: 114rem;
+    margin-inline: auto;
+    width: 90%;
+}
+
+.primary-heading {
+    font-size: 2.76rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.secondary-heading {
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: var(--clr-text-light);
+    line-height: 1.2;
+}
+
+/* ===================
+    HEADER SECTION
+====================== */
+.header {
+    background-color: var(--clr-top-bg);
+    height: 250px;
+    padding-top: 3rem;
+}
+
+/* ===================
+    SOCIAL GROUP SECTION
+====================== */
+
+.social-group__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+    /* margin-top: -50%; */
+}
+
+.user {
+    background-color: var(--clr-top-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2.5rem;
+    border-top: 4px solid var(--clr-facebook);
+    border-radius: 6px;
+    /* box-shadow: 0 1rem 2rem  rgba(0,0,0,.1); */
+}
+
+.user--facebook { border-top: 4px solid var(--clr-facebook); }
+.user--twitter {border-top: 4px solid var(--clr-twitter);}
+.user--insta {border-top: 4px solid var(--clr-youTube);}
+.user--youtube {border-top: 4px solid var(--clr-youTube);}
+
+.user__social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.user__id {
+    font-weight: 700;
+    color: var(--clr-text-light);
+    margin-left: 1rem;
+}
+
+.user__follower-count {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.quantity-type {
+    letter-spacing: 5px;
+    color: var(--clr-text-light);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.user__follower-stats {
+    display: flex;
+    align-items: center;
+    color: var(--clr-lime-green);
+    font-weight: 700;
+    gap: .5rem;
 }
