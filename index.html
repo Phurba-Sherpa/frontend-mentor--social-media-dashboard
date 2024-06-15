@@ -16,144 +16,230 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="container header__content">
+      <div class="header__text">
+        <h1 class="primary-heading">Social Media Dashboard
+        </h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="toggle__group">
+        <input id="theme-switcher" type="checkbox" class="toggle">
+        <label for="theme-switcher" class="btn-toggle" onclick="handleToggleTheme()">
+          Dark Mode
+        </label>
+      </div>
+    </div>
+  </header>
   <main class="container">
-    <div class="header__text container">
-      <h1 class="primary-heading">Social Media Dashboard
-      </h1>
-      <p>Total Followers: 23,004</p>
-    </div>
 
-    <div class="user user--facebook">
-      <div class="user__social-media">
-        <img src="./images/icon-facebook.svg" alt="facebook" />
-        <span class="user__id">@nathanf</span>
+    <section class="social-group__container">
+      <div class="user user--facebook">
+        <div class="user__social-media">
+          <img src="./images/icon-facebook.svg" alt="facebook" />
+          <span class="user__id">@nathanf</span>
+        </div>
+        <p class="user__follower-count">1987</p>
+        <p class="quantity-type">Followers</p>
+        <div class="user__follower-stats">
+          <img src="./images/icon-up.svg" alt="up" />
+          <p>12 Today</p>
+        </div>
       </div>
-      <p class="user__follower-count">1987</p>
-      <p class="quantity-type">Followers</p>
-      <div class="user__follower-stats">
-        <img src="./images/icon-up.svg" alt="up" />
-        <p>12 Today</p>
-      </div>
-    </div>
 
-    <div class="user user--twitter">
-      <div class="user__social-media">
-        <img src="./images/icon-twitter.svg" alt="twitter" />
-        <span class="user__id">@nathanf</span>
+      <div class="user user--twitter">
+        <div class="user__social-media">
+          <img src="./images/icon-twitter.svg" alt="twitter" />
+          <span class="user__id">@nathanf</span>
+        </div>
+        <p class="user__follower-count">1044</p>
+        <p class="quantity-type">Followers</p>
+        <div class="user__follower-stats">
+          <img src="./images/icon-up.svg" alt="up" />
+          <p>99 Today</p>
+        </div>
       </div>
-      <p class="user__follower-count">1044</p>
-      <p class="quantity-type">Followers</p>
-      <div class="user__follower-stats">
-        <img src="./images/icon-up.svg" alt="up" />
-        <p>99 Today</p>
-      </div>
-    </div>
 
-    <div class="user user--insta">
-      <div class="user__social-media">
-        <img src="./images/icon-instagram.svg" alt="facebook" />
-        <span class="user__id">@realnathanf</span>
+      <div class="user user--insta">
+        <div class="user__social-media">
+          <img src="./images/icon-instagram.svg" alt="facebook" />
+          <span class="user__id">@realnathanf</span>
+        </div>
+        <p class="user__follower-count">11k</p>
+        <p class="quantity-type">Followers</p>
+        <div class="user__follower-stats">
+          <img src="./images/icon-up.svg" alt="up" />
+          <p>1099 Today</p>
+        </div>
       </div>
-      <p class="user__follower-count">11k</p>
-      <p class="quantity-type">Followers</p>
-      <div class="user__follower-stats">
-        <img src="./images/icon-up.svg" alt="up" />
-        <p>1099 Today</p>
-      </div>
-    </div>
 
-    <div class="user user--youtube">
-      <div class="user__social-media">
-        <img src="./images/icon-youtube.svg" alt="facebook" />
-        <span class="user__id">Nathan F.</span>
+      <div class="user user--youtube">
+        <div class="user__social-media">
+          <img src="./images/icon-youtube.svg" alt="facebook" />
+          <span class="user__id">Nathan F.</span>
+        </div>
+        <p class="user__follower-count">8239</p>
+        <p class="quantity-type">Followers</p>
+        <div class="user__follower-stats">
+          <img src="./images/icon-down.svg" alt="down" />
+          <p>144 Today</p>
+        </div>
       </div>
-      <p class="user__follower-count">8239</p>
-      <p class="quantity-type">Followers</p>
-      <div class="user__follower-stats">
-        <img src="./images/icon-down.svg" alt="down" />
-        <p>144 Today</p>
-      </div>
-    </div>
+    </section>
 
-    <h2 class="secondary-heading">Overview - Today</h2>
+    <section class="overview">
+      <h2 class="secondary-heading">Overview - Today</h2>
 
-    <div class="overview-box">
-      <p class="overview__tag">Page Views</p>
-      <img src="./images/icon-facebook.svg" alt="facebook" />
-      <p class="overview__quantity">87</p>
-      <div class="overview__stats">
-        <img src="./images/icon-up.svg" alt="icon down" />
-        <p class="overview__stats-number">3%</p>
-      </div>
-    </div>
+      <div class="overview-container">
+        <div class="overview-box">
+          <div class="social-info">
+            <p class="overview__tag">Page Views</p>
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="social-stats">
+            <p class="overview__quantity">87</p>
+            <div class="overview__stats">
+              <img src="./images/icon-up.svg" alt="icon up" />
+              <p class="overview__stats-number number-inc">3%</p>
+            </div>
+          </div>
+        </div>
 
-    <div class="overview-box">
-      <p class="overview__tag">Likes</p>
-      <img src="./images/icon-facebook.svg" alt="facebook" />
-      <p class="overview__quantity">52</p>
-      <div class="overview__stats">
-        <img src="./images/icon-down.svg" alt="icon down" />
-        <p class="overview__stats-number">2%</p>
-      </div>
-    </div>
+        <div class="overview-box">
+          <div class="social-info">
+            <p class="overview__tag">Likes</p>
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+          </div>
 
-    <div class="overview-box">
-      <p class="overview__tag">Likes</p>
-      <img src="./images/icon-instagram.svg" alt="facebook" />
-      <p class="overview__quantity">5462</p>
-      <div class="overview__stats">
-        <img src="./images/icon-down.svg" alt="icon down" />
-        <p class="overview__stats-number">2257%</p>
-      </div>
-    </div>
+          <div class="social-stats">
+            <p class="overview__quantity">52</p>
+            <div class="overview__stats">
+              <img src="./images/icon-down.svg" alt="icon down" />
+              <p class="overview__stats-number number-dec">2%</p>
+            </div>
+          </div>
+        </div>
 
-    <div class="overview-box">
-      <p class="overview__tag">Profile Views</p>
-      <img src="./images/icon-instagram.svg" alt="facebook" />
-      <p class="overview__quantity">52k</p>
-      <div class="overview__stats">
-        <img src="./images/icon-up.svg" alt="icon down" />
-        <p class="overview__stats-number">1375%</p>
-      </div>
-    </div>
+        <div class="overview-box">
+          <div class="social-info">
+            <p class="overview__tag">Likes</p>
+            <img src="./images/icon-instagram.svg" alt="facebook" />
+          </div>
+          <div class="social-stats">
+            <p class="overview__quantity">5462</p>
+            <div class="overview__stats">
+              <img src="./images/icon-up.svg" alt="icon up" />
+              <p class="overview__stats-number number-inc">2257%</p>
+            </div>
+          </div>
+        </div>
 
-    <div class="overview-box">
-      <p class="overview__tag">Retweets</p>
-      <img src="./images/icon-twitter.svg" alt="facebook" />
-      <p class="overview__quantity">117</p>
-      <div class="overview__stats">
-        <img src="./images/icon-down.svg" alt="icon down" />
-        <p class="overview__stats-number">303%</p>
-      </div>
-    </div>
+        <div class="overview-box">
+          <div class="social-info">
+            <p class="overview__tag">Profile Views</p>
+            <img src="./images/icon-instagram.svg" alt="facebook" />
+          </div>
+          <div class="social-stats">
+            <p class="overview__quantity">52k</p>
+            <div class="overview__stats">
+              <img src="./images/icon-up.svg" alt="icon up" />
+              <p class="overview__stats-number number-inc">1375%</p>
+            </div>
+          </div>
+        </div>
 
-    <div class="overview-box">
-      <p class="overview__tag">Likes</p>
-      <img src="./images/icon-twitter.svg" alt="facebook" />
-      <p class="overview__quantity">507</p>
-      <div class="overview__stats">
-        <img src="./images/icon-down.svg" alt="icon down" />
-        <p class="overview__stats-number">553%</p>
-      </div>
-    </div>
+        <div class="overview-box">
+          <div class="social-info">
+            <p class="overview__tag">Retweets</p>
+            <img src="./images/icon-twitter.svg" alt="facebook" />
+          </div>
+          <div class="social-stats">
+            <p class="overview__quantity">117</p>
+            <div class="overview__stats">
+              <img src="./images/icon-up.svg" alt="icon up" />
+              <p class="overview__stats-number number-inc">303%</p>
+            </div>
+          </div>
+        </div>
 
-    <div class="overview-box">
-      <p class="overview__tag">Likes</p>
-      <img src="./images/icon-youtube.svg" alt="facebook" />
-      <p class="overview__quantity">107</p>
-      <div class="overview__stats">
-        <img src="./images/icon-down.svg" alt="icon down" />
-        <p class="overview__stats-number">19%</p>
-      </div>
-    </div>
-    <div class="overview-box">
-      <p class="overview__tag">Total Views</p>
-      <img src="./images/icon-youtube.svg" alt="facebook" />
-      <p class="overview__quantity">1407</p>
-      <p class="overview__stats">12%</p>
-    </div>
+        <div class="overview-box">
+          <div class="social-info">
+            <p class="overview__tag">Likes</p>
+            <img src="./images/icon-twitter.svg" alt="facebook" />
+          </div>
+          <div class="social-stats">
+            <p class="overview__quantity">507</p>
+            <div class="overview__stats">
+              <img src="./images/icon-up.svg" alt="icon up" />
+              <p class="overview__stats-number number-inc">553%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-box">
+          <div class="social-info">
+            <p class="overview__tag">Likes</p>
+            <img src="./images/icon-youtube.svg" alt="facebook" />
+          </div>
+          <div class="social-stats">
+            <p class="overview__quantity">107</p>
+            <div class="overview__stats">
+              <img src="./images/icon-down.svg" alt="icon down" />
+              <p class="overview__stats-number number-dec">19%</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="overview-box">
+          <div class="social-info">
+            <p class="overview__tag">Total Views</p>
+            <img src="./images/icon-youtube.svg" alt="facebook" />
+          </div>
+          <div class="social-stats">
+            <p class="overview__quantity">1407</p>
+            <div class="overview__stats">
+              <img src="./images/icon-down.svg" alt="icon down" />
+              <p class="overview__stats-number number-dec">12%</p>
+            </div>
+          </div>
+    </section>
 
   </main>
+
+  <script>
+
+
+    const rootEl = document.documentElement
+    const btn = document.getElementById('theme-switcher')
+
+    window.onload = function () {
+      const darkMode = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches;
+      btn.checked = darkMode
+      addThemeClass(darkMode)
+    }
+
+
+    const handleToggleTheme = () => {
+      setTimeout(() => {
+        const isDarkTheme = btn.checked
+        addThemeClass(isDarkTheme)
+
+      }, 50)
+
+    }
+
+    const addThemeClass = darkMode => {
+      let oldClass = darkMode ? 'light-mode' : 'darak-mode'
+      let newClass = darkMode ? 'dark-mode' : 'light-mode'
+      if (rootEl.className) {
+        rootEl.classList.remove('dark-mode')
+        rootEl.classList.add(newClass)
+      }
+      else rootEl.classList.toggle(newClass)
+    }
+  </script>
 </body>
 
 </html>
